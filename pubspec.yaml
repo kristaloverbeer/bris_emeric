@@ -1,0 +1,46 @@
+name: bris_emeric
+description: "Resume website for Emeric Bris."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  responsive_framework: ^1.5.1
+  url_launcher: ^6.3.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.5
+  build_runner: ^2.4.15
+  custom_lint: ^0.7.5
+  riverpod_lint: ^2.6.5
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/favicon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icons/favicon.png"
+    background_color: "#0175C2"
+    theme_color: "#0175C2"
