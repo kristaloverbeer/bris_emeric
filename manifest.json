@@ -1,11 +1,11 @@
 {
     "name": "bris_emeric",
     "short_name": "bris_emeric",
-    "start_url": ".",
+    "start_url": "/bris_emeric/",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Resume website for Emeric Bris.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
