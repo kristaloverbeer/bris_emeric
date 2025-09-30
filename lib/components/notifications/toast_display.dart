@@ -10,7 +10,7 @@ class ToastDisplay extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final toast = ref.watch(toastNotifierProvider);
+    final toast = ref.watch(toastProvider);
 
     return Stack(
       children: [

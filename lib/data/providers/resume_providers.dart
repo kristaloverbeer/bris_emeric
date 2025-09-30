@@ -4,7 +4,6 @@ import 'package:bris_emeric/data/models/profile.dart';
 import 'package:bris_emeric/data/models/project.dart';
 import 'package:bris_emeric/data/models/skill.dart';
 import 'package:bris_emeric/data/sources/resume_data.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'resume_providers.g.dart';

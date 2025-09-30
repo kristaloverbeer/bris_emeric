@@ -71,9 +71,7 @@ class _ButtonContactMeState extends ConsumerState<ButtonContactMe> {
     if (await canLaunchUrl(emailUri)) {
       await launchUrl(emailUri, mode: LaunchMode.platformDefault);
     } else {
-      ref
-          .read(toastNotifierProvider.notifier)
-          .showToast(message: 'Could not open email client', type: ToastType.error);
+      ref.read(toastProvider.notifier).showToast(message: 'Could not open email client', type: ToastType.error);
     }
   }
 }

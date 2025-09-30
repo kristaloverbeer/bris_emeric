@@ -52,7 +52,7 @@ class ButtonSocialLink extends ConsumerWidget {
       await launchUrl(uri, mode: LaunchMode.platformDefault);
     } else {
       ref
-          .read(toastNotifierProvider.notifier)
+          .read(toastProvider.notifier)
           .showToast(message: 'Could not open $name link', type: ToastType.error);
     }
   }

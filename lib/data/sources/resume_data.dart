@@ -183,12 +183,14 @@ class ResumeData {
     Project(
       title: 'Keep in Touch',
       description: 'Mobile app that helps introverts keep in touch regularly with people',
+      imageUrl: 'assets/images/keepintouch.png',
       githubUrl: 'https://github.com/kristaloverbeer/keep_in_touch',
       technologies: ['Flutter', 'Dart', 'Riverpod', 'Hive', 'Firebase'],
     ),
     Project(
       title: 'Server NAS',
       description: 'Home server & NAS to self-host and provide services to myself, friends and family.',
+      imageUrl: 'assets/images/truenas.png',
       technologies: ['TrueNAS Scale', 'Docker'],
     )
   ];
