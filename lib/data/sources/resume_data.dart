@@ -8,14 +8,15 @@ class ResumeData {
   // Personal Information
   static const Profile personalInfo = Profile(
     name: 'Emeric Bris',
-    title: 'Lead Data Engineer',
+    title: 'Senior Data Engineer | Data Team Lead | SaaS Founder',
     location: 'Paris, France',
-    email: 'brisemeric.pro@gmail.com',
-    summary: 'Passionate Data Engineer with expertise in data engineering and web development.',
+    email: 'brisemeric@gmail.com',
+    summary:
+        "Senior Data Engineer with 10 years' experience building robust data platforms, leading data teams, and architecting SaaS solutions.",
     about:
-        "I'm a passionate Data Engineer with over 10 years of experience building data pipelines and systems. I specialize mainly in data engineering but I'm also very comfortable working with backend technologies. I currently spend time learning Flutter and solving complex problems and creating intuitive user experiences.",
+        'Proven ability to drive high-impact projects end-to-end — from design to production — across cloud, real-time, and batch data systems. Recent work includes launching Performera (AI-driven SaaS), team recruiting and mentoring, and hands-on development using Python, modern DevOps, Next.js and Flutter.',
     socialLinks: {
-      'LinkedIn': 'https://www.linkedin.com/in/emeric-bris/',
+      'LinkedIn': 'https://www.linkedin.com/in/emeric-bris',
       'GitHub': 'https://github.com/kristaloverbeer',
     },
   );
@@ -23,31 +24,41 @@ class ResumeData {
   // Professional Experience
   static const List<Experience> experiences = [
     Experience(
-      position: 'Data Team Lead',
-      company: 'Side.co',
-      period: '2019 - 2024',
+      position: 'Founder',
+      company: 'Performera.pro',
+      period: 'Sept 2024 - Now',
       location: 'Paris, France',
       responsibilities: [
-        'Implemented data engineering best practices and CI/CD processes, achieving near-zero error rates in data collection',
-        'Initiated lambda architecture implementation with Apache Kafka and Airflow for real-time capacities like recruitment rule checking',
-        'Developed real-time travel time computation system for temporary workers and missions optimization',
-        'Created NLP system to convert experience descriptions into ISO ROME codes for skill matching',
-        'Managed temporary workforce systems including French holiday invoicing regulations',
-        'Implemented third-party integration flows for payroll and contract management',
-        'Led recruitment, training, and mentoring of Data Engineers and Data Analysts',
+        'Conceived, architected, and launched an AI-driven SaaS platform with Next.js and Firebase/GCP, automating resume and cover letter creation, personalized interview preparation, and recruitment workflow for job seekers and career changers.',
+        'Engineered a secure, scalable multi-tenant web application, integrating Google Firebase, Firestore, Auth, and reCaptcha v3 for robust data protection and frictionless user onboarding.',
+        'Implemented core product features: automated document generation tailored to each job application with pixel-perfect downloaded PDF rendering; Interactive virtual interview coaching with real-time response feedback; Intelligent FAQ and skill-highlighting tools for recruitment success.',
+      ],
+      technologies: ['Next.js', 'GCP', 'Entrepreneurship', 'Artificial Intelligence'],
+    ),
+    Experience(
+      position: 'Data Team Lead',
+      company: 'Side.co',
+      period: 'Oct 2019 -  Aug 2024',
+      location: 'Paris, France',
+      responsibilities: [
+        'Built and led a high-performing data team: recruited and mentored engineers/analysts, standardized onboarding and role expectations, and developed long-term career progressions—empowering fast integration and high-impact delivery.',
+        'Designed and delivered scalable data pipelines and warehouse infrastructure, integrating ELT/analytics with real-time architecture (Airflow, Kafka, dbt) and launching self-service BI. Achieved a reduction in daily pipeline errors from 50 to 1, with transparent reporting and greater reliability for all stakeholders.',
+        'Established robust CI/CD workflows, rebuilt local dev setups, and launched reverse-ETL and analytics microservices, boosting team efficiency and extending business value.',
+        'Led the end-to-end development and migration of payroll automation systems, enabling automated declaration for 25,000+ temp workers and over 5,000 payslips monthly with minimal manual effort from operational teams.',
+        "Spearheaded transformation of the job posting system by integrating the French ROME classification, expanding from 20 to 3,000 possible job titles, and built a resume analyzer leveraging NLP to match temp workers' prior experience with mission requirements—streamlining recruitment and saving time across product and operations.",
+        'Implemented a real-time legal compliance engine and automated contract management, drastically reducing non-compliant hirings and saving hours weekly for operations through robust rule checks on internal tools.',
       ],
       technologies: ['Python', 'Apache Kafka', 'Airflow', 'NLP'],
     ),
     Experience(
       position: 'Data Engineer',
       company: 'Kpler',
-      period: '2018 - 2019',
+      period: 'May 2018 - Oct 2019',
       location: 'Paris, France',
       responsibilities: [
-        'Designed high-performance data pipelines and APIs using Python, Scala, and Elasticsearch',
-        'Led platform migration project consolidating multiple codebases using Python, PostgreSQL, and Ansible',
-        'Developed generic CRUD APIs with Python, Flask, and SQLAlchemy for business analyst autonomy',
-        'Built real-time data aggregation system for front-end applications and report generation',
+        'Designed, optimized, and maintained high-performance ETL pipelines and APIs using Python, Scala, Elasticsearch, PostgreSQL, and NoSQL — delivering highly aggregated data and actionable commodity intelligence to clients and front-end applications.',
+        'Led the migration and consolidation of multiple data platforms and codebases into a unified infrastructure, enabling scalable integration of disparate data sources through Python and Ansible automation.',
+        'Established generic CRUD APIs exposed through internal tools empowering business analysts with self-service autonomy and fostering operational efficiency.',
       ],
       technologies: [
         'Python',
@@ -61,15 +72,14 @@ class ResumeData {
       ],
     ),
     Experience(
-      position: 'DevOps Engineer',
+      position: 'Software Engineer',
       company: 'Tiime',
-      period: '2017 - 2018',
+      period: 'Jul 2017 - May 2018',
       location: 'Paris, France',
       responsibilities: [
-        'Set up internal and AWS infrastructure for testing and CI/CD, implementing development best practices',
-        'Developed automatic bank transaction labeling system with real-time and batch processing capabilities',
-        'Created internal web interface for manual review of low-confidence results',
-        'Trained developers on Python, development best practices, and TDD',
+        'Refactored and optimized legacy data science infrastructure, revamping Docker-based deployments to create lean, reliable, and resource-efficient environments for machine learning models.',
+        'Engineered and delivered first backend microservices, applying DDD and TDD practices to build robust banking transaction processing, labelization, and categorization pipelines—seamlessly integrating improved data science services.',
+        'Developed an interactive internal tool for accountants to audit and correct banking transaction labels, enabling direct feedback on machine learning categorization and accelerating improvements to automation accuracy.',
       ],
       technologies: [
         'Python',
@@ -85,12 +95,12 @@ class ResumeData {
     Experience(
       position: 'Data Engineer',
       company: 'SoftBank Robotics Europe',
-      period: '2015 - 2017',
+      period: 'Oct 2015 - Jun 2017',
       location: 'Paris, France',
       responsibilities: [
-        'Developed data collection pipelines between various storage systems and Data Lake',
-        'Implemented automated data processing workflows with visualization capabilities',
-        'Containerized ETL solution and integrated it into CI pipeline',
+        'Established first scalable data platform, transforming scattered scripts into a centralized analytics pipeline orchestrated with Spotify Luigi, enabling reliable business and technical insights from robot telemetry.',
+        'Engineered end-to-end ETL workflows leveraging Pyspark on AWS EMR, ingesting high-volume data from Cassandra, PostgreSQL and APIs, and building a robust AWS S3 data lake in Parquet format—underpinning advanced dashboards and financial analytics.',
+        'Expanded data platform use cases from business reporting to operational analytics, enabling automated tracking of robot health (dead-on-arrival stats), repair outcomes, and deep-dive analyses like battery sizing across product versions.',
       ],
       technologies: [
         'Python',
@@ -139,26 +149,24 @@ class ResumeData {
 
   // Skills
   static const List<Skill> skills = [
-    Skill(title: 'Programming', skills: ['Python', 'SQL', 'Shell', 'Scala', 'Dart', 'Bash']),
+    Skill(title: 'Programming', skills: ['Python', 'SQL', 'Bash', 'Dart', 'TypeScript', 'JavaScript']),
     Skill(
-      title: 'Frameworks',
-      skills: ['Airflow', 'Luigi', 'Spark', 'FastAPI', 'Flask', 'Django', 'AngularJS'],
+      title: 'Frameworks & Libraries',
+      skills: ['FastAPI', 'Flask', 'Airflow', 'Next.js', 'Spark', 'Kafka', 'dbt'],
     ),
     Skill(
-      title: 'Data Technologies',
-      skills: ['Apache Kafka', 'dbt', 'ETL', 'Data Warehouse', 'Data Pipeline'],
+      title: 'Cloud & DevOps',
+      skills: ['AWS', 'GCP', 'Docker', 'Gitlab', 'Ansible', 'CI/CD'],
     ),
-    Skill(title: 'Databases', skills: ['PostgreSQL', 'MongoDB', 'Elasticsearch', 'Redis', 'OLAP']),
+    Skill(title: 'Data Engineering', skills: ['ETL', 'Data Modeling', 'Data Warehousing', 'Data Quality Management', 'Lambda architecture', 'Real-time processing', 'Batch processing', 'NoSQL']),
     Skill(
-      title: 'DevOps',
-      skills: ['Git', 'Docker', 'Kubernetes', 'Ansible', 'Terraform', 'CI/CD', 'Vagrant', 'AWS'],
+      title: 'Visualization',
+      skills: ['Looker', 'Grafana', 'Metabase'],
     ),
-    Skill(title: 'Cloud', skills: ['AWS', 'Google Cloud']),
-    Skill(title: 'Monitoring & Visualization', skills: ['Looker', 'Metabase']),
-    Skill(title: 'Project Tools', skills: ['GitLab', 'Slack', 'Notion', 'Jira']),
+    Skill(title: 'Product & Project Management', skills: ['Agile Development', 'Stakeholder Management', 'Client communication', 'Cross-team collaboration']),
     Skill(
-      title: 'Leadership',
-      skills: ['Team Management', 'Recruitment', 'Mentoring', 'Technical Leadership', 'Training'],
+      title: 'Management',
+      skills: ['Team leadership', 'recruiting', 'onboarding', 'mentoring', 'remote teamwork'],
     ),
   ];
 
@@ -170,7 +178,18 @@ class ResumeData {
       imageUrl: 'assets/images/profile.webp',
       projectUrl: 'https://kristaloverbeer.github.io/bris_emeric',
       githubUrl: 'https://github.com/kristaloverbeer/bris_emeric',
-      technologies: ['Flutter', 'Dart', 'Firebase'],
+      technologies: ['Flutter', 'Dart', 'Riverpod', 'Firebase'],
     ),
+    Project(
+      title: 'Keep in Touch',
+      description: 'Mobile app that helps introverts keep in touch regularly with people',
+      githubUrl: 'https://github.com/kristaloverbeer/keep_in_touch',
+      technologies: ['Flutter', 'Dart', 'Riverpod', 'Hive', 'Firebase'],
+    ),
+    Project(
+      title: 'Server NAS',
+      description: 'Home server & NAS to self-host and provide services to myself, friends and family.',
+      technologies: ['TrueNAS Scale', 'Docker'],
+    )
   ];
 }
